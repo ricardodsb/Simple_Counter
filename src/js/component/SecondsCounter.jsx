@@ -1,5 +1,6 @@
 import React from "react";
-export function SimpleCounter(props) {
+import PropTypes from "prop-types";
+export const SimpleCounter = props => {
 	return (
 		<div className="bigCounter">
 			<div className="clock">
@@ -7,10 +8,14 @@ export function SimpleCounter(props) {
 					src="https://icon-library.com/images/white-clock-icon/white-clock-icon-16.jpg"
 					style={{ width: "35px" }}></img>
 			</div>
-			<div className="four">0</div>
-			<div className="three">0</div>
-			<div className="two">0</div>
-			<div className="one">0</div>
+			<div className="four">{Math.floor(props.time / 1000)}</div>
+			<div className="three">{Math.floor((props.time % 1000) / 100)}</div>
+			<div className="two">{Math.floor((props.time % 100) / 10)}</div>
+			<div className="one">{props.time % 10}</div>
 		</div>
 	);
-}
+};
+
+SimpleCounter.propTypes = {
+	time: PropTypes.number
+};
