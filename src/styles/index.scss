@@ -3,20 +3,53 @@ body {
     background: black;
 }
 
-.bigCounter {
+.title {
+    text-align: center;
+    color: blueviolet;
+    font-family: fantasy;
+    margin-top: 20px;
+}
+
+.Timers {
     text-align: center;
     background: black;
 }
 
-.bigCounter div{
+.Timers div{
     display: inline-block;
-    font-size: 80px;
+    font-size: 50px;
     line-height: 80px;
     background: rgb(43, 42, 42);
     color: white;
     padding: 20px;
     margin: 5px;
     width: 80px;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 10px;
+}
+
+#buttons {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.button1{
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    background: rgb(46, 116, 46);
+}
+
+.button2{
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    background: rgb(102, 24, 24);
+}
+
+.button3{
+    border-radius: 50%;
+    padding: 10px;
+    background: rgb(110, 110, 201);
 }

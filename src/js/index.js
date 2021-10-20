@@ -12,11 +12,7 @@ import { SimpleCounter } from "./component/SecondsCounter.jsx";
 //render your react application
 Seconds = 0;
 setInterval(() => {
-	ReactDOM.render(
-		<SimpleCounter time={Seconds} />,
-		document.querySelector("#app")
-	);
-	Seconds++;
-}, 1000);
+	ReactDOM.render(<SimpleCounter />, document.querySelector("#app"));
+});
 
 var Seconds;
